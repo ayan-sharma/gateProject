@@ -1,0 +1,69 @@
+
+.active-page{
+    background-color: #E59515;
+    color: #ffffff;
+    /* border: transparent; */
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 1% !important;
+    border: 5px solid #e59515;
+    /* margin: 0px !important; */
+
+    cursor: pointer;
+  }
+
+  .disabled{
+    color: black !important;
+    background-color: transparent !important;
+    border: transparent !important;
+    border: 5px solid #ffffff00 !important;
+
+    margin: 0px !important;
+    padding:1% !important;
+    cursor: pointer;
+  }
+
+  .pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 50%;
+
+    align-items: center;
+    cursor: pointer;
+    
+  }
+
+  .input-group {
+    position: relative;
+  }
+  
+  .input-group input {
+    padding-left: 2.5rem; /* Adjust as needed based on icon size */
+    
+    background: #F6F7FB;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    height: 6vh;
+
+  }
+  
+  .input-group::before {
+    /* content: "\f13a"; dropdown */
+    content: "\f002";
+    font-family: "Font Awesome 5 Free"; /* Replace with the Font Awesome font family */
+    font-weight: 900; /* Adjust the font weight if needed */
+    position: absolute;
+    top: 50%;
+    left: 0.25rem;
+    transform: translateY(-50%);
+    /* font-size: 1.5rem; */
+    color: #CED2E3;
+
+  }
+  
+  .disabled-arow {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
